@@ -142,3 +142,39 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-list {
+  list-style: disc inside;
+  margin-top: 6px;
+  padding-left: 12px;
+  max-height: 120px;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  border: 1px solid #eef3ff;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.participant-item {
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  background-color: #f7f9ff;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+.no-participants {
+  margin-top: 6px;
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
