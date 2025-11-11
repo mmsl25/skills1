@@ -148,9 +148,9 @@ footer {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none; /* hide bullets */
   margin-top: 6px;
-  padding-left: 12px;
+  padding-left: 0;
   max-height: 120px;
   overflow-y: auto;
   background: linear-gradient(180deg, #ffffff, #fbfdff);
@@ -160,12 +160,30 @@ footer {
 }
 
 .participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 6px 8px;
   border-radius: 4px;
   margin-bottom: 6px;
   background-color: #f7f9ff;
   color: #1a237e;
   font-size: 14px;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(198, 40, 40, 0.08);
 }
 
 .participant-item:last-child {
